@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<?php $this->load->view('partials/head'); ?>
-	
+    <?php $this->load->view('partials/head'); ?>
+
 </head>
+
 <body>
-	<?php $this->load->view('partials/header'); ?>
-	 <!-- ##### Breadcrumb Area Start ##### -->
-   <!-- ##### Breadcrumb Area Start ##### -->
+    <?php $this->load->view('partials/header'); ?>
+    <!-- ##### Breadcrumb Area Start ##### -->
+    <!-- ##### Breadcrumb Area Start ##### -->
     <div class="breadcrumb-area">
         <!-- Top Breadcrumb Area -->
         <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(../assets_user/img/bg-img/jst.jpg);">
@@ -27,10 +29,10 @@
             </div>
         </div>
     </div>
-                    
-        
- 
- <!-- ##### About Area Start ##### -->
+
+
+
+    <!-- ##### About Area Start ##### -->
     <section class="about-us-area">
         <div class="container">
             <div class="row justify-content-between">
@@ -43,7 +45,7 @@
                     <div class="section-heading">
                         <h2>APA TUJUAN SISTEM PAKAR INI ?</h2>
                     </div>
-                    <p style="text-align:justify;">Sistem Pakar ini dibuat dengan tujuan untuk membantu khususnya para petani jamur tiram untuk mendiagnosa hama atau penyakit yang sedang menyerang dari gejala-gejala yang muncul atau terlihat pada jamur tiram yang sedang terserang disertai dengan cara pengobatan dan cara pencegahannya yang terhubung langsung dengan PT.JASENTRA Jember.  </p>
+                    <p style="text-align:justify;">Sistem Pakar ini dibuat dengan tujuan untuk membantu khususnya para petani jamur tiram untuk mendiagnosa hama atau penyakit yang sedang menyerang dari gejala-gejala yang muncul atau terlihat pada jamur tiram yang sedang terserang disertai dengan cara pengobatan dan cara pencegahannya yang terhubung langsung dengan PT.JASENTRA Jember. </p>
                     <div class="alazea-progress-bar mb-50">
                     </div>
                 </div>
@@ -54,7 +56,7 @@
                             <!-- Single Benefits Area -->
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
-                                    <img src="<?php echo base_url('assets_user/img/core-img/b1.png')?>" alt="">
+                                    <img src="<?php echo base_url('assets_user/img/core-img/p1.png') ?>" alt="">
                                     <h5>Diagnosa Cepat</h5>
                                     <p>Sistem pakar ini cepat dan efisien dalam menentukan hama atau penyakit yang sedang menyerang jamur tiram.</p>
                                 </div>
@@ -63,7 +65,7 @@
                             <!-- Single Benefits Area -->
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
-                                    <img src="<?php echo base_url('assets_user/img/core-img/b2.png')?>" alt="">
+                                    <img src="<?php echo base_url('assets_user/img/core-img/p2.png') ?>" alt="">
                                     <h5>Digunakan Dimanapun</h5>
                                     <p>Sistem Pakar ini dapat digunakan dimanapun dengan perangkat laptop ataupun handphone.</p>
                                 </div>
@@ -72,7 +74,7 @@
                             <!-- Single Benefits Area -->
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
-                                    <img src="<?php echo base_url('assets_user/img/core-img/b3.png')?>" alt="">
+                                    <img src="<?php echo base_url('assets_user/img/core-img/p3.png') ?>" alt="">
                                     <h5>Detail Hama Penyakit</h5>
                                     <p>Sistem ini memiliki 9 data hama penyakit serta gejalanya sampai dengan cara pengobatan dan pencegahan.</p>
                                 </div>
@@ -81,7 +83,7 @@
                             <!-- Single Benefits Area -->
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
-                                    <img src="<?php echo base_url('assets_user/img/core-img/b4.png')?>" alt="">
+                                    <img src="<?php echo base_url('assets_user/img/core-img/p4.png') ?>" alt="">
                                     <h5>Terhubung Langsung Pakar</h5>
                                     <p>Sistem ini terhubung langsung dengan PT.JASENTRA Jember yaitu perusahaan di bidang budidaya jamur tiram.</p>
                                 </div>
@@ -105,4 +107,5 @@
 
 </body>
 <?php $this->load->view('partials/script'); ?>
+
 </html>
