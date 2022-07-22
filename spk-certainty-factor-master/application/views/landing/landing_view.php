@@ -2,15 +2,15 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo mr-auto"><a href="<?= base_url(); ?>">Sistem Pakar</a></h1>
+            <h1 class="logo mr-auto"><a href="<?= base_url(); ?>">DokterKu</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li class="active"><a href="<?= base_url(); ?>">Home</a></li>
                     <li><a href="#about">Tentang</a></li>
-                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#services">Info Hama & Penyakit</a></li>
                     <li><a href="<?= base_url('diagnosa/diagnosa'); ?>">Diagnosa</a></li>
                     <li><a href="<?= base_url('login'); ?>">Login</a></li>
                 </ul>
@@ -22,9 +22,10 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero">
         <div class="hero-container">
-            <h3>Selamat datang di <strong>Sistem Pakar</strong></h3>
-            <!-- <h1>DETEKSI PINTAR</h1> -->
-            <h2>Sistem ini di lengkapi pengetahuan dari pakar terpercaya untuk mengidentifikasi jenis jerawat</h2>
+            <h3>Selamat datang di <strong>DokterKu</strong></h3>
+            <div class="section-title">
+                <p style="color:aliceblue">Sistem pakar diagnosis hama dan penyakit pada bawang merah menggunakan metode certainty factor dengan menggunakan mesin inferesi forward chaining.</p>
+            </div>
             <a href="#about" class="btn-get-started scrollto">Lebih Lanjut</a>
         </div>
     </section><!-- End Hero -->
@@ -67,53 +68,116 @@
             </div>
         </section><!-- End About Section -->
 
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+            <div class="container">
+
+                <div class="text-center">
+                    <h3>Coba Diagnosa Sekarang</h3>
+                    <p>Anda dapat mencoba melakukan diagnosa sekarang juga, secara gratis tanpa dipungut biaya. Dapatkan diagnosa secara akurat seperti halnya diagnosa dari seorang pakar asli.</p>
+                    <a class="cta-btn" href="<?= base_url('diagnosa/diagnosa'); ?>">Diagnosa Sekarang</a>
+                </div>
+
+            </div>
+        </section><!-- End Cta Section -->
+
         <!-- ======= Services Section ======= -->
         <section id="services" class="services">
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Layanan</h2>
+                    <h2>Informasi Penyakit Bawang Merah</h2>
                     <h3>Sistem ini memiliki beberapa <span>Layanan</span></h3>
                     <p>Layanan dibuat untuk admin, seorang pakar, ataupun pengunjung yang ingin melakukan diagnosa.</p>
                 </div>
 
+                <div class="section-title">
+                    <h2>Daftar Hama Bawang Merah</h2>
+                </div>
+
                 <div class="row">
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-search"></i></div>
-                            <h4 class="title"><a href="">Diagnosa Otomatis</a></h4>
+                            <div class="icon"><i class="bx bx-bug"></i></div>
+                            <h4 class="title"><a href="">Hama Ulat Bawang </a></h4>
                             <p class="description">Pengguna hanya perlu melakukan input data diri dan mengisi kuisioner. Hasil akan muncul secara otomatis.</p>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-brain"></i></div>
-                            <h4 class="title"><a href="">Smart Detection</a></h4>
+                            <div class="icon"><i class="bx bx-bug"></i></div>
+                            <h4 class="title"><a href="">Hama Lalat Pengorok Daun </a></h4>
                             <p class="description">Diagnosa penyakit dilakukan menggunakan metode certainty factor menghasilkan hasil beserta nilai kepastianya</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section><!-- End Services Section -->
 
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-tachometer"></i></div>
-                            <h4 class="title"><a href="">Dashboard Panel</a></h4>
-                            <p class="description">Disediakan dashboard panel bagi admin dan pakar untuk melakukan pengelolaan data.</p>
-                        </div>
+        <section id="services" class="services">
+            <div class="container" style="display: flex; justify-content: center; align-items: center;">
+                <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-bug"></i></div>
+                        <h4 class="title"><a href="">Hama Ulat Bawang </a></h4>
+                        <p class="description">Pengguna hanya perlu melakukan input data diri dan mengisi kuisioner. Hasil akan muncul secara otomatis.</p>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Daftar Penyakit Bawang Merah</h2>
+                </div>
+
+                <div class="row ">
+                    <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-world"></i></div>
-                            <h4 class="title"><a href="">Mudah Diakses</a></h4>
+                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
+                            <h4 class="title"><a href="">Penyakit Moler atau Layu Fusarium </a></h4>
                             <p class="description">Kemudahan akses, dan penggunaan. Dapat diakses melalui internet kapan saja dimana saja.</p>
                         </div>
                     </div>
 
+                    <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
+                            <h4 class="title"><a href="">Penyakit Moler atau Layu Fusarium </a></h4>
+                            <p class="description">Kemudahan akses, dan penggunaan. Dapat diakses melalui internet kapan saja dimana saja.</p>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
         </section><!-- End Services Section -->
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+            <div class="container">
+
+                <div class="row ">
+                    <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
+                            <h4 class="title"><a href="">Penyakit Moler atau Layu Fusarium </a></h4>
+                            <p class="description">Kemudahan akses, dan penggunaan. Dapat diakses melalui internet kapan saja dimana saja.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
+                            <h4 class="title"><a href="">Penyakit Moler atau Layu Fusarium </a></h4>
+                            <p class="description">Kemudahan akses, dan penggunaan. Dapat diakses melalui internet kapan saja dimana saja.</p>
+                        </div>
+                    </div>
+                </div>
+        </section><!-- End Services Section -->
+
+
 
         <!-- ======= Cta Section ======= -->
         <section id="cta" class="cta">

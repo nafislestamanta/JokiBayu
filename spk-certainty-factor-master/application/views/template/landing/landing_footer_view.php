@@ -5,7 +5,7 @@
         <div class="mr-md-auto text-center text-md-left">
             <div class="copyright">
                 <!-- &copy; Copyright  -->
-                <strong><span>Sistem Pakar</span></strong>. 
+                <strong><span>DokterKu</span></strong>.
                 <!-- All Rights Reserved -->
             </div>
             <div class="credits">
