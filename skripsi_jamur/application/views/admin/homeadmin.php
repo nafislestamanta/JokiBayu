@@ -26,7 +26,7 @@
   <section class="content">
     <!-- Small boxes (Stat box) -->
     <div class="row">
-      <div class="col-lg-3 col-xs-6">
+      <div class="col-lg-4 col-xs-6">
         <!-- small box -->
         <div class="small-box bg-aqua">
           <div class="inner">
@@ -41,7 +41,7 @@
         </div>
       </div>
       <!-- ./col -->
-      <div class="col-lg-3 col-xs-6">
+      <div class="col-lg-4 col-xs-6">
         <!-- small box -->
         <div class="small-box bg-green">
           <div class="inner">
@@ -56,12 +56,11 @@
         </div>
       </div>
       <!-- ./col -->
-      <div class="col-lg-3 col-xs-6">
+      <div class="col-lg-4 col-xs-6">
         <!-- small box -->
         <div class="small-box bg-yellow">
           <div class="inner">
             <h3><?php echo $pengobatan ?></h3>
-
             <p>Pengobatan </p>
           </div>
           <div class="icon">
@@ -84,13 +83,14 @@
             </div>
             <a href="<?php echo site_url('admin/Pencegahan') ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> -->
 
+
   </section>
 
   <!-- Main content -->
   <section class="content">
     <!-- Small boxes (Stat box) -->
     <div class="row">
-      <div class="col-lg-3 col-xs-6">
+      <div class="col-lg-4 col-xs-6">
         <!-- small box -->
         <div class="small-box bg-aqua">
           <div class="inner">
@@ -105,7 +105,7 @@
         </div>
       </div>
       <!-- ./col -->
-      <div class="col-lg-3 col-xs-6">
+      <div class="col-lg-4 col-xs-6">
         <!-- small box -->
         <div class="small-box bg-green">
           <div class="inner">
@@ -135,7 +135,7 @@
         </div>
       </div> -->
 
-      <div class="col-lg-3 col-xs-6">
+      <div class="col-lg-4 col-xs-6">
         <!-- small box -->
         <div class="small-box bg-red">
           <div class="inner">
