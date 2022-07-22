@@ -295,6 +295,63 @@ class Admin extends CI_Controller
         $this->load->view('admin/ajax/edit_penyakit_form', $data);
     }
 
+    // * untuk menampilkan edit penyakit
+    public function EditPenyakitFix($id)
+    {
+        $nama_penyakit = $this->input->post('nama_penyakit');
+        $deskripsi_penyakit = $this->input->post('deskripsi_penyakit');
+        $saran_penyakit = $this->input->post('saran_penyakit');
+        $gambar_penyakit = $_FILES['gambar_penyakit']['name'];
+
+        $config['upload_path']      =    './assets/img/penyakit/';
+        $config['allowed_types']    =    'jpg|jpeg|png';
+        $config['max_size']         =    10000;
+
+        $this->load->library('upload', $config);
+
+        if ($gambar_penyakit) {
+            if ($this->upload->do_upload('gambar_penyakit')) {
+
+                $data = [
+                    'nama_penyakit' => $nama_penyakit,
+                    'deskripsi_penyakit' => $deskripsi_penyakit,
+                    'saran_penyakit' => $saran_penyakit,
+                    'gambar_penyakit' => preg_replace("/\s+/", "_", $gambar_penyakit)
+                ];
+
+                $update = $this->Penyakit_model->updatePenyakitFix($data, $id);
+
+                if ($update) {
+                    $this->session->set_flashdata('message', '<div class="alert alert-success alert-dismissible"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Berhasil merubah data</div>');
+                    redirect('Admin/Penyakit');
+                } else {
+                    $this->session->set_flashdata('message', '<div class="alert alert-danger alert-dismissible"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Gagal merubah data</div>');
+                    redirect('Admin/Penyakit');
+                }
+            } else {
+                $error = array('error' => $this->upload->display_errors());
+                $this->session->set_flashdata('message', '<div class="alert alert-danger alert-dismissible"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Gambar tidak sesuai format</div>');
+                redirect('Admin/Penyakit', $error);
+            }
+        } else {
+            $data = [
+                'nama_penyakit' => $nama_penyakit,
+                'deskripsi_penyakit' => $deskripsi_penyakit,
+                'saran_penyakit' => $saran_penyakit,
+            ];
+
+            $update = $this->Penyakit_model->updatePenyakitFix($data, $id);
+
+            if ($update) {
+                $this->session->set_flashdata('message', '<div class="alert alert-success alert-dismissible"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Berhasil merubah data</div>');
+                redirect('Admin/Penyakit');
+            } else {
+                $this->session->set_flashdata('message', '<div class="alert alert-danger alert-dismissible"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Gagal merubah data</div>');
+                redirect('Admin/Penyakit');
+            }
+        }
+    }
+
     // * untuk menghapus penyakit
     public function deletePenyakit($id_penyakit)
     {
@@ -449,7 +506,7 @@ class Admin extends CI_Controller
                 $data_update_pengetahuan = array(
                     'id_penyakit' => $id_penyakit,
                     'id_gejala' => $id_gejala,
-                    'cf_pakar' => $mb,                    
+                    'cf_pakar' => $mb,
                 );
 
                 if ($this->Pengetahuan_model->updatePengetahuan('id_basis_pengetahuan', $data_update_pengetahuan, $id_basis_pengetahuan)) { // * jika berhasil update pengetahuan

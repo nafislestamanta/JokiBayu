@@ -32,20 +32,27 @@ class Penyakit_model extends CI_Model
         }
     }
 
+    public function updatePenyakitFix($data, $id)
+    {
+        return $this->db->where('id_penyakit', $id)->update('tb_penyakit', $data);
+    }
+
     public function deletePenyakit($tipe, $param = 'id_penyakit')
     {
         if ($tipe == 'id_penyakit') {
-            return $this->db->delete('tb_penyakit', ['id_penyakit' => $param]);        
+            return $this->db->delete('tb_penyakit', ['id_penyakit' => $param]);
         }
     }
 
-    public function countPenyakit($tipe, $param = NULL) {
+    public function countPenyakit($tipe, $param = NULL)
+    {
         if ($tipe == 'all') {
             return $this->db->count_all_results('tb_penyakit');
         }
     }
 
-    public function getHasilPenyakit($list_penyakit) {
+    public function getHasilPenyakit($list_penyakit)
+    {
         $array_hasil_penyakit = array();
 
         foreach ($list_penyakit as $id_penyakit => $nilai) {
