@@ -65,7 +65,7 @@ class Auth extends CI_Controller
                     redirect('admin/Homeadmin');
                 }
                 if ($user->level == "user") { // Jika User biasa
-                    $this->session->set_flashdata('pesan', '<p class="text-center alert alert-danger"  </p> ' . $this->session->userdata('nama'));
+                    $this->session->set_flashdata('pesan', '<p class="text-center alert alert-success">Selamat Datang,  ' . $this->session->userdata('nama') . '</p>');
                     redirect('Home');
                 }
             } else { //Jika username benar dan password salah 
