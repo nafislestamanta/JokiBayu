@@ -141,9 +141,9 @@
                                             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#keterangan<?= $p->id_hp ?>">
                                                 Keterangan
                                             </button>
-                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#pencegahan<?= $p->id_hp ?>">
+                                            <!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#pencegahan<?= $p->id_hp ?>">
                                                 Pencegahan
-                                            </button>
+                                            </button> -->
                                             <button type="button" class="btn btn-warning   " data-toggle="modal" data-target="#pengobatan<?= $p->id_hp ?>">
                                                 Pengobatan
                                             </button>
@@ -203,32 +203,32 @@
             </div>
             </div>
 
-            <?php foreach ($query->result() as $row) {
-                $pencegahan = $this->db->where('id_hp', $row->id_hp)->get('pencegahan')->row();
-            ?>
-                <!-- Modal -->
-                <div class="modal fade" id="keterangan<?= $row->id_hp ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="detail">Keterangan</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p><?= $row->keterangan; ?></p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
+            <!-- <?php foreach ($query->result() as $row) {
+                        // $pencegahan = $this->db->where('id_hp', $row->id_hp)->get('pencegahan')->row();
+                    ?> -->
+            <!-- Modal -->
+            <div class="modal fade" id="keterangan<?= $row->id_hp ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="detail">Keterangan</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p><?= $row->keterangan; ?></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
+            </div>
 
 
-                <!-- Modal -->
-                <div class="modal fade" id="pencegahan<?= $row->id_hp ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!-- Modal -->
+            <!-- <div class="modal fade" id="pencegahan<?= $row->id_hp ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -247,34 +247,34 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            <?php } ?>
+                </div> -->
+        <?php } ?>
 
-            <?php foreach ($query->result() as $row) {
-                $pengobatan = $this->db->where('id_hp', $row->id_hp)->get('pengobatan')->row();
-            ?>
-                <!-- Modal -->
-                <div class="modal fade" id="pengobatan<?= $row->id_hp ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="detail">Pengobatan</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+        <?php foreach ($query->result() as $row) {
+            $pengobatan = $this->db->where('id_hp', $row->id_hp)->get('pengobatan')->row();
+        ?>
+            <!-- Modal -->
+            <div class="modal fade" id="pengobatan<?= $row->id_hp ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="detail">Pengobatan</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-md-12">
+                                <p><?= $pengobatan->pengobatan; ?></p>
                             </div>
-                            <div class="modal-body">
-                                <div class="col-md-12">
-                                    <p><?= $pengobatan->pengobatan; ?></p>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
-            <?php } ?>
+            </div>
+        <?php } ?>
 
 
 </body>

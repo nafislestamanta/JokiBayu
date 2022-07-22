@@ -197,7 +197,6 @@
                     <select name="cf_pakar" id="cf_pakar" class="form-control select2" style="width: 100%;">
                       <option required>--Pilih Nilai CF--</option>
                       <option value="0">0</option>
-                      <option value="0.2">0.2</option>
                       <option value="0.4">0.4</option>
                       <option value="0.6">0.6</option>
                       <option value="0.8">0.8</option>
