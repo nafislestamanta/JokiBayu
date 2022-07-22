@@ -50,8 +50,9 @@
                                             <td class="align-middle">
                                                 <p class="m-0"><a href="<?= $row['id_penyakit']; ?>" class="h6 action-edit"><?= $row['nama_penyakit']; ?></a></p>
                                                 <p class="m-0">
-                                                    <a href="<?= $row['id_penyakit']; ?>" class="text-small text-danger action-edit">Edit</a> |
-                                                    <!-- <a href="<? // base_url('admin/artikelpenyakit/') . $row['id_penyakit']; ?>" class="text-small text-danger">Deskripsi & Saran</a> | -->
+                                                    <a data-toggle="modal" data-target="#ModalEditFix<?= $row['id_penyakit']; ?>" class="text-small text-danger">Edit</a> |
+                                                    <!-- <a href="<? // base_url('admin/artikelpenyakit/') . $row['id_penyakit']; 
+                                                                    ?>" class="text-small text-danger">Deskripsi & Saran</a> | -->
                                                     <a href="<?= base_url('admin/deletepenyakit/') . $row['id_penyakit']; ?>" class="text-small text-danger action-delete">Hapus</a>
                                                 </p>
                                             </td>
@@ -120,7 +121,7 @@
                     <div class="form-group">
                         <label for="customFile">Choose Image</label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="penyakitImage" accept="image/x-png,image/gif,image/jpeg" name="gambar_penyakit" required>
+                            <input type="file" class="custom-file-input" id="penyakitImage" accept="image/x-png,image/gif,image/jpeg,image/jpg" name="gambar_penyakit" required>
                             <label class="custom-file-label" for="customFile">Choose file</label>
                             <img style="object-fit: cover; height: 100px; width: 150px;" width="150px" height="100px" src="" alt="penyakit" id="penyakitPreview" class="img-fluid mt-2 d-none">
                         </div>
@@ -136,6 +137,54 @@
         <!-- /.modal-dialog -->
     </form>
 </div>
+
+<!-- Modal Edit  -->
+<?php foreach ($penyakit as $row) : ?>
+    <div class="modal fade" id="ModalEditFix<?= $row['id_penyakit']; ?>">
+        <form action="<?= base_url('Admin/EditPenyakitFix/') . $row['id_penyakit'] ?>" method="post" enctype="multipart/form-data">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Edit Penyakit</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="namaPenyakitAdd">Nama Penyakit</label>
+                            <input type="text" class="form-control" name="nama_penyakit" value="<?= $row['nama_penyakit'] ?>" placeholder="nama penyakit baru" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="penyakitArtikel">Deskripsi Penyakit</label>
+                            <textarea cols="30" rows="5" class="form-control" name="deskripsi_penyakit" placeholder="masukkan deskripsi tentang penyakit disini"><?= $row['deskripsi_penyakit'] ?></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="penyakitSaranArtikel">Saran Penyakit</label>
+                            <textarea cols="30" rows="5" class="form-control" name="saran_penyakit" placeholder="masukkan saran tentang penyakit disini"><?= $row['saran_penyakit'] ?></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="customFile">Choose Image</label>
+                            <small class="text-danger pl-2">Tidak perlu menginput jika tidak ingin mengubah gambar sebelumnya</small>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" name="gambar_penyakit">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                <!-- <img style="object-fit: cover; height: 100px; width: 150px;" width="150px" height="100px" src="" alt="penyakit" id="penyakitPreview" class="img-fluid mt-2 d-none"> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <!-- <input type="submit" name="submit-type" class="btn btn-primary" value="Tambah"> -->
+                        <button type="submit" class="btn btn-primary btn-flat">Update</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </form>
+    </div>
+<?php endforeach; ?>
 
 <div class="modal fade" id="edit-modal">
     <form action="" method="post" autocomplete="off" enctype="multipart/form-data">
