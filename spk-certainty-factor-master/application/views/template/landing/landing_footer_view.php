@@ -5,7 +5,7 @@
         <div class="mr-md-auto text-center text-md-left">
             <div class="copyright">
                 <!-- &copy; Copyright  -->
-                <strong><span>DokterKu</span></strong>.
+                <strong><span>PSIGAME</span></strong>.
                 <!-- All Rights Reserved -->
             </div>
             <div class="credits">

@@ -1,7 +1,7 @@
 <div class="login-box">
   <div class="login-logo">
     <a href="<?= base_url(); ?>">
-      <h2>SIPAKAR</h2>
+      <h2>PSI-GAME</h2>
     </a>
   </div>
   <!-- /.login-logo -->

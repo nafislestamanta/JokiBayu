@@ -3,7 +3,7 @@
     <!-- Brand Logo -->
     <a href="#l" class="brand-link text-center">
       <!-- <img src="<?= base_url('assets/adminlte/'); ?>dist/img/AdminLTELogo.png" alt="STEP-A Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
-      <span class="brand-text font-weight-bold">SIPAKAR</span>
+      <span class="brand-text font-weight-bold">Psi-Game Admin</span>
     </a>
 
     <!-- Sidebar -->

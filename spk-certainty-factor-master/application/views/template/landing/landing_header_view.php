@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>DokterKu</title>
+  <!-- <link rel="shortcut icon" href="logo.png" /> -->
+  <link href="<?= base_url('assets/landing/') ?>img/gamepad.png" rel="shortcut icon">
+  <title>PSI-GAME</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 

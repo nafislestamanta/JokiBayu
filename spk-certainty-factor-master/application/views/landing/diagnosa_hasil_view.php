@@ -2,7 +2,7 @@
 <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
 
-        <h1 class="logo mr-auto"><a href="<?= base_url(); ?>">Sistem Pakar</a></h1>
+        <h1 class="logo mr-auto"><a href="<?= base_url(); ?>">PSI-GAME</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -10,8 +10,8 @@
             <ul>
                 <li><a href="<?= base_url(); ?>">Home</a></li>
                 <li><a href="<?= base_url(); ?>#about">Tentang</a></li>
-                <li><a href="<?= base_url(); ?>#services">Layanan</a></li>
                 <li class="active"><a href="<?= base_url('diagnosa/diagnosa'); ?>">Diagnosa</a></li>
+                <li><a href="<?= base_url(); ?>#services">Info Penyakit</a></li>
                 <li><a href="<?= base_url('login'); ?>">Login</a></li>
             </ul>
         </nav><!-- .nav-menu -->
@@ -89,7 +89,7 @@
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-md-12 text-center mb-3">
-                                                    <img style="max-width: 500px;" src="<?= base_url('assets/img/penyakit/') . $penyakit['gambar_penyakit'] ?>" class="img-fluid" width="100%" alt="">                                                    
+                                                    <img style="max-width: 500px;" src="<?= base_url('assets/img/penyakit/') . $penyakit['gambar_penyakit'] ?>" class="img-fluid" width="100%" alt="">
                                                 </div>
                                                 <div class="col-md-12 text-dark">
                                                     <h4><?= $penyakit['nama_penyakit']; ?></h4>

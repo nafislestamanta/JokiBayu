@@ -2,7 +2,7 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo mr-auto"><a href="<?= base_url(); ?>">DokterKu</a></h1>
+            <h1 class="logo mr-auto"><a href="<?= base_url(); ?>">PSI-GAME</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
 
@@ -10,8 +10,8 @@
                 <ul>
                     <li class="active"><a href="<?= base_url(); ?>">Home</a></li>
                     <li><a href="#about">Tentang</a></li>
-                    <li><a href="#services">Info Hama & Penyakit</a></li>
                     <li><a href="<?= base_url('diagnosa/diagnosa'); ?>">Diagnosa</a></li>
+                    <li><a href="#services">Info Penyakit</a></li>
                     <li><a href="<?= base_url('login'); ?>">Login</a></li>
                 </ul>
             </nav><!-- .nav-menu -->
@@ -22,9 +22,9 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero">
         <div class="hero-container">
-            <h3>Selamat datang di <strong>DokterKu</strong></h3>
+            <h3>Selamat datang di <strong>Psi-Game</strong></h3>
             <div class="section-title">
-                <p style="color:aliceblue">Sistem pakar diagnosis hama dan penyakit pada bawang merah menggunakan metode certainty factor dengan menggunakan mesin inferesi forward chaining.</p>
+                <p style="color:aliceblue">Sistem Pakar Deteksi Kecanduan Game Online Pada Pelajar Menggunakan Metode Certainty Factor Berbasis Web.</p>
             </div>
             <a href="#about" class="btn-get-started scrollto">Lebih Lanjut</a>
         </div>
@@ -86,111 +86,82 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Informasi Penyakit Bawang Merah</h2>
-                    <h3>Sistem ini memiliki beberapa <span>Layanan</span></h3>
-                    <p>Layanan dibuat untuk admin, seorang pakar, ataupun pengunjung yang ingin melakukan diagnosa.</p>
-                </div>
-
-                <div class="section-title">
-                    <h2>Daftar Hama Bawang Merah</h2>
+                    <h2>Info Penyakit</h2>
+                    <h3>Informasi Penyakit Kecanduan <span>Game Online</span></h3>
+                    <p>Informasi yang dibuat untuk melihat macam macam penyakit dari efek kecanduan game online</p>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-bug"></i></div>
-                            <h4 class="title"><a href="">Hama Ulat Bawang </a></h4>
-                            <p class="description">Pengguna hanya perlu melakukan input data diri dan mengisi kuisioner. Hasil akan muncul secara otomatis.</p>
+                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
+                            <h4 class="title"><a href="">Salliance (Arti) </a></h4>
+                            <p class="description" style="text-align: justify;">Dikarenakan adanya dominasi pikiraan, perasaan perilaku asyik bermain game maka perlu dilakukan kegiatan – kegiatan olah fisik yang membuat lebih asyik lagi agar tidak terdominasi dengan game online. Sesekali diberikan pengetahuan tentang olah raga dan disela bermain game melakukan olah raga untuk menstimulus agar tidak mementingkan bermain game. Sehingga nantinya muncul pikiran tidak terlalu mementingkan game online</p>
                         </div>
                     </div>
 
-                    <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-bug"></i></div>
-                            <h4 class="title"><a href="">Hama Lalat Pengorok Daun </a></h4>
-                            <p class="description">Diagnosa penyakit dilakukan menggunakan metode certainty factor menghasilkan hasil beserta nilai kepastianya</p>
+                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
+                            <h4 class="title"><a href="">Tolerance (Toleransi) </a></h4>
+                            <p class="description" style="text-align: justify;">Disini masih ada sikap menerima terhadap diri sendiri sehingga bemain game onlie cukup diberikan nasehat – nasehat positif terkait baik buruknya dalam permainan game online. Dia tetap bia melaksanakan kegiatan tersebut tetapi nantinya bisa menyadari bahwa kepuasan bisa didapatkan dari mana saja tidak selalu dari bermain game online.</p>
                         </div>
                     </div>
+
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
+                            <h4 class="title"><a href="">Mood Modification (Modifikasi perasaan)</a></h4>
+                            <p class="description" style="text-align: justify;">Suasana hati untuk penenang jika terjadi permasalahan dan stress bisa dilakukan dengan melakukan hal hal positif atau melakukan sesuatu yang menyenangkan. Sepanjang pelarian ke game online bisa secara wajar dan tidak menggangu pola piker masih dikatakan normal. Tetapi jika pelarian ke game online disamping mood membaik tetapi mempengaruhi pikiran dan jiwa sehingga terjadi habituasi dan mengganggu fisik dan psikis tetap diperlukan pendampingan orang ketiga. </p>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
             </div>
         </section><!-- End Services Section -->
 
         <section id="services" class="services">
-            <div class="container" style="display: flex; justify-content: center; align-items: center;">
-                <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-bug"></i></div>
-                        <h4 class="title"><a href="">Hama Ulat Bawang </a></h4>
-                        <p class="description">Pengguna hanya perlu melakukan input data diri dan mengisi kuisioner. Hasil akan muncul secara otomatis.</p>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
+                            <h4 class="title"><a href="">Relapse (Perulangan) </a></h4>
+                            <p class="description" style="text-align: justify;">Agar pemain game tidak melakkan pengulangan maka perlu adanya orang ketiga yang melakukan pendekatan untuk melakukan kegiatan positif. Pemain tersebut diajak untuk berkegiatan selain bermain game terutama kegiatan bersifat olah fisik dan piker. Olah raga fisik maupun olah raga non Fisik. Maka kecanduan kembali lagi akan tertangani. </p>
+                        </div>
                     </div>
+
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
+                            <h4 class="title"><a href="">Withdrawal (Penarikan) </a></h4>
+                            <p class="description" style="text-align: justify;">Jika sudah mencapai tahap menarik diri dari kebiasan bermain game yang berlebihan maka disini sudah terjadi gangguan psikis. Maka pemain game online perlu dilakukan konsuluasi dan Therapi Psikologi dan mungkin juga diperlukan Hipnotherapi. Yaitu memberikan sugesti positif akan kondisi negative bisa dihindari.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
+                            <h4 class="title"><a href="">Conflict (Konflik) </a></h4>
+                            <p class="description" style="text-align: justify;">Salah satu awal gangguan kejiwaan adalah jika seorang pemain game online sering terjadi konflik dan adanya gangguang social terhadap sekitar. Penanganan dalam hal ini diperlukan pihak ke tiga untuk menanganinya yaitu Psikolog atau Psikiater yang akan melakukan anamnesa dan pengobatan yang perlu untuk mengembalikan kehidupannya menjadi normal kembali. Dikarenakan jika tidak ditangani segera mungkin maka akan terjadi gangguan kejiwaan yang lebih paranh dan membutuhkan obat – obatan jiwa dalam penangannya. </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
+                            <h4 class="title"><a href="">Problem (Masalah) </a></h4>
+                            <p class="description" style="text-align: justify;">Pecandu game online yang sudah menunjukkan terjadi permasalahan baik individu maupun social perlu penanganan Psikolog dan Pikiater. Jika masalah semakin berat disamping Therapi Psikis, Hipnotherapi juga dimungkinkan obat – obatan kejiwaan. Sebelum terjadinya kegagalan dalam pekerjaan/ perkuliahan</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </section>
-
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Daftar Penyakit Bawang Merah</h2>
-                </div>
-
-                <div class="row ">
-                    <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
-                            <h4 class="title"><a href="">Penyakit Moler atau Layu Fusarium </a></h4>
-                            <p class="description">Kemudahan akses, dan penggunaan. Dapat diakses melalui internet kapan saja dimana saja.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
-                            <h4 class="title"><a href="">Penyakit Moler atau Layu Fusarium </a></h4>
-                            <p class="description">Kemudahan akses, dan penggunaan. Dapat diakses melalui internet kapan saja dimana saja.</p>
-                        </div>
-                    </div>
-                </div>
-        </section><!-- End Services Section -->
-
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services">
-            <div class="container">
-
-                <div class="row ">
-                    <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
-                            <h4 class="title"><a href="">Penyakit Moler atau Layu Fusarium </a></h4>
-                            <p class="description">Kemudahan akses, dan penggunaan. Dapat diakses melalui internet kapan saja dimana saja.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-9 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-shape-polygon"></i></div>
-                            <h4 class="title"><a href="">Penyakit Moler atau Layu Fusarium </a></h4>
-                            <p class="description">Kemudahan akses, dan penggunaan. Dapat diakses melalui internet kapan saja dimana saja.</p>
-                        </div>
-                    </div>
-                </div>
-        </section><!-- End Services Section -->
-
-
-
-        <!-- ======= Cta Section ======= -->
-        <section id="cta" class="cta">
-            <div class="container">
-
-                <div class="text-center">
-                    <h3>Coba Diagnosa Sekarang</h3>
-                    <p>Anda dapat mencoba melakukan diagnosa sekarang juga, secara gratis tanpa dipungut biaya. Dapatkan diagnosa secara akurat seperti halnya diagnosa dari seorang pakar asli.</p>
-                    <a class="cta-btn" href="<?= base_url('diagnosa/diagnosa'); ?>">Diagnosa Sekarang</a>
-                </div>
-
             </div>
-        </section><!-- End Cta Section -->
+        </section><!-- End Services Section -->
+
 
         <!-- ======= F.A.Q Section ======= -->
         <section id="faq" class="faq">

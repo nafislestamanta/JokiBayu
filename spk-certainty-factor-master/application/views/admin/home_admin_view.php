@@ -74,139 +74,14 @@
                         <!-- ./col -->
                     </div>
 
-                    <div class="row">
-                        <!-- penyakit -->
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">Statistik Berdasar Penyakit</h3>
-
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <!-- /.card-header -->
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="chart-responsive">
-                                                <canvas id="pieChartPenyakit" height="150"></canvas>
-                                            </div>
-                                            <!-- ./chart-responsive -->
-                                        </div>
-                                    </div>
-                                    <!-- /.row -->
-                                </div>
-                                <!-- /.card-body -->
-                                <div class="card-footer bg-light p-0">
-                                    <ul class="nav nav-pills flex-column">
-                                        <?php foreach ($hasil_penyakit as $penyakit) : ?>
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link">
-                                                    <?= $penyakit['nama_penyakit']; ?>
-                                                    <span class="float-right text-info">
-                                                        <i class="fas fa-arrow-right text-sm"></i>
-                                                        <?= $penyakit['count_penyakit']; ?></span>
-                                                </a>
-                                            </li>
-                                        <?php endforeach; ?>
-                                    </ul>
-                                </div>
-                                <!-- /.footer -->
+                    <div class="col-md-112 col-sm-12">
+                        <div class="card">
+                            <div class="card-content">
+                                <img class="card-img-top img-fluid" src="assets/landing/img/hero-bg.jpg" alt="Card image cap" style="height: 35rem" />
                             </div>
-                            <!-- /.card -->
-                        </div>
-
-                        <!-- usia -->
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">Statistik Berdasar Usia</h3>
-
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <!-- /.card-header -->
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="chart-responsive">
-                                                <canvas id="pieChartUsia" height="150"></canvas>
-                                            </div>
-                                            <!-- ./chart-responsive -->
-                                        </div>
-                                    </div>
-                                    <!-- /.row -->
-                                </div>
-                                <!-- /.card-body -->
-                                <div class="card-footer bg-light p-0">
-                                    <ul class="nav nav-pills flex-column">
-                                        <?php foreach ($hasil_usia as $penyakit) : ?>
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link">
-                                                    <?= $penyakit['usia'] . ' tahun'; ?>
-                                                    <span class="float-right text-info">
-                                                        <i class="fas fa-arrow-right text-sm"></i>
-                                                        <?= $penyakit['count_penyakit']; ?></span>
-                                                </a>
-                                            </li>
-                                        <?php endforeach; ?>
-                                    </ul>
-                                </div>
-                                <!-- /.footer -->
-                            </div>
-                            <!-- /.card -->
-                        </div>
-
-                        <!-- jenis kelamin -->
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">Statistik Berdasar Jenis Kelamin</h3>
-
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <!-- /.card-header -->
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="chart-responsive">
-                                                <canvas id="pieChartKelamin" height="150"></canvas>
-                                            </div>
-                                            <!-- ./chart-responsive -->
-                                        </div>
-                                    </div>
-                                    <!-- /.row -->
-                                </div>
-                                <!-- /.card-body -->
-                                <div class="card-footer bg-light p-0">
-                                    <ul class="nav nav-pills flex-column">
-                                        <?php foreach ($hasil_jenis_kelamin as $penyakit) : ?>
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link">
-                                                    <?= $penyakit['jenis_kelamin']; ?>
-                                                    <span class="float-right text-info">
-                                                        <i class="fas fa-arrow-right text-sm"></i>
-                                                        <?= $penyakit['count_penyakit']; ?></span>
-                                                </a>
-                                            </li>
-                                        <?php endforeach; ?>
-                                    </ul>
-                                </div>
-                                <!-- /.footer -->
-                            </div>
-                            <!-- /.card -->
                         </div>
                     </div>
+                    <!--  -->
                 </div>
             </div>
         </div>
